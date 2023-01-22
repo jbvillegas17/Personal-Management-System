@@ -1,0 +1,253 @@
+html {
+	scrollbar-width: normal;
+	scrollbar-color: red;
+}
+	
+
+
+::-webkit-scrollbar {
+	width: 12px;
+	
+}
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(transparent, #00c6ff);
+	border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {/*00c6ff*/
+	background: linear-gradient(transparent, red);/*30ff00*/
+	
+}
+body {
+	background: linear-gradient(-135deg, #c850c0, #4158d0);
+	margin: 0;
+	
+}
+/*header backg color*/
+.headi {
+	background-color: black;
+	width: 100%;
+	height: 110px;
+}
+/*header text*/
+h1 {
+	text-align: center;
+	margin-top: -70px;
+	color: lime;
+	font-size: 35px;
+	letter-spacing: 2px;
+	margin-left: 70px;
+	font-family: arial;
+	transition: 0.5s;
+}
+
+h1:hover {
+	color: red;
+	transition: 1s;
+}
+
+/*menu icon*/
+.allmenuicon {
+	margin-left: 43px;
+	margin-top: -73px;
+}
+.menuicon {
+	width: 51px;
+	height: 6px;
+	background-color: white;
+	margin: 9px 0;
+}
+#buttmenuicon {
+	background-color: black;
+}
+/*side bar*/
+#allsidebar {
+	background-color: black;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	top: 0;
+	transition: 1s;
+	z-index: 1;
+	overflow-x: hidden;
+}
+/*anchor like home, about...*/
+#allsidebar a {
+	width: 0;
+	height: 0;
+	padding: 10px 20px;
+	display: block;
+	font-size: 22px;
+	text-decoration: none;
+	color: red;
+	padding: 25px 30px;
+	margin: 0;
+	transition: 1.9s;
+}
+a:after {
+	content: "";
+	position: absolute;
+	background-color: blue;
+	height: 3px;
+	width: 0px;
+	left: 0;
+	margin-left: 20px;
+	transition: 1s;
+	
+}
+#allsidebar a:hover {
+	color: yellow;
+	transition: 1s;
+}
+
+a:hover:after {
+	width: 150px;
+}
+.sidebar {
+	
+	margin-left: 30px;
+	margin-top: 40px;
+}
+
+h3 {
+	color: white;
+	font-family: cursive;
+	font-size: 35px;
+	margin-top: 40px;
+	margin-left: 30px;
+}
+/*X icon*/
+#ex {
+	font-family: arial;
+	float: right;
+	margin-right: 15px;
+	margin-top: 50px;
+	font-size: 24px;
+	width: 45px;
+	height: 40px;
+	font-weight: bold;
+	background-color: gray;
+	
+	color: black;
+	
+}
+
+/**//**/
+/*header*/
+h2 {
+	text-align: center;
+	height: 50px;
+	font-size: 30px;
+	font-family: arial;
+	
+		
+}
+		
+/*all div*/
+.wrapper {
+	width: 450px; /*width of the wrapper*/
+	background: #fff;/*white*/
+	padding: 30px;/* to make the inner move to right side*/
+	box-shadow: 20px/*width*/ 7px/*height*/ 15px/*opacity*/rgba(0, 0, 0, 0.3);/*color*/
+	border-radius: 20px;/*circle*/
+	margin-left: 250px;/*move the div to the center*/
+	margin-top: 100px;/*move the div to the bottom*/
+	height: 370px;/*height of the div*/
+	
+}
+/*to control the input*/
+.wrapper .input-data {
+	height: 43px; /*height of input*/
+	width: 100%; /*width of input*/
+	position: relative; /*position of the input*/
+	font-size: 19px; /*fontsize of text*/
+
+}
+
+.wrapper .input-data input {
+	height: 24px; /*height of text  of the input */
+	width: 100%;/**/
+	border: none; /*no border*/
+	outline: none; /*no outline*/
+	font-size: 17px; /*font size of the text inside of the input*/
+	border-bottom: 2px solid silver; /*to show border in bottom*/
+	padding-top: 11px;/*to move the input in the bottom */
+	
+}
+/*transition*/
+.input-data input:focus ~ label, .input-data input:valid ~ label {
+	transform: translateY(-30px); /*This will move the text*/ /*if y it is horizotal and if x it is vertical*/
+	transition: all 0.3s ease; /*transition of it*/
+	font-size: 19px; /*font size of its transition*/
+	color: #4158d0; /*color of its transition*/ 
+}
+/**/
+.wrapper .input-data label {
+		
+	position: absolute; /*to make text in the inside*/
+	bottom: 8px; /*to make take down in the input*/
+	left: 0; /*idk*/
+	color: black; /*color of the text*/
+	pointer-events: none;
+	font-family: serif;
+}
+/*underline in the input*/
+.input-data .underline {
+	position: absolute; /*to make it thin*/
+	bottom: 5px; /*make the underline move in the top*/
+	height: 2px; /*height of the underline*/
+	width: 454px; /*width of the underline*/
+		
+		
+}
+.input-data .underline:before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	width: 100%;
+	background-color: violet;
+	transform: scaleX(0);
+		
+}
+.input-data input:focus ~ .underline:before, .input-data input:valid ~ .underline:before {
+	transform: scaleX(1);
+		
+}
+		/*CHECKBOX*/
+#check-box{
+	margin-bottom: 30px;
+	width: 15px;
+	height: 14px;
+	margin-top: 13px;
+}
+
+/*SHOW PASS TEXT*/
+#showpass {
+	font-size: 16px;
+	font-family: arial;
+	margin-left: -3px;
+	
+	
+}
+
+/*SUBMIT BUTTON*/
+#submit{
+	background-color: black;
+	border: none;
+	width: 188px;
+	height: 30px;
+	cursor: pointer;
+	font-size: 16px;
+	font-family: arial;
+	color: white;
+	border-radius: 10px;
+	transition: 1s;
+}
+#submit:hover {
+	background-color: black;
+	color: white;
+	width: 459px;
+	transition: 1s;
+} 
+#submit:active {
+	opacity: 80%;
+}

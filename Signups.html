@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOMEPAGE</title>
+		<link rel = "stylesheet" href = "Signup.css">
+		<link rel = "icon" type = "image/png" href = "Photo_1674378114468.png">
+		<script src = "Signups.js"></script>
+	</head>
+	<body>
+		<!--header-->
+		<div class = "headi"></div>
+		<h1>PERSONAL INFO  MANAGEMENT  SYSTEM</h1>
+		
+		<!--sidebar-->
+		<div id = "allsidebar">
+		<button id = "ex" onclick = "closeNav()"><b>X</b></button> <!--x button-->
+		<h3>GROUP #1</h3>
+			<div class = "sidebar">
+			<a href = "">HOME</a>
+			<a href = "">INFO</a>
+			<a href = "">ABOUT</a>
+			</div>
+		</div>
+		<!--Menu icon-->
+		<div class = "allmenuicon">
+		<button id = "buttmenuicon" onclick = "openNav()">
+			<div class = "menuicon"></div>
+			<div class = "menuicon"></div>
+			<div class = "menuicon"></div>
+		</button>
+		</div>
+		<!--Sign up-->
+		
+		
+		<div class = "wrapper"> <!--ALL-->
+			<h2>SIGN UP</h2>
+			
+			<div class = "input-data"> <!--TO CONTROL THE INPUT-->
+			<input type = "text" required id = "username">
+			<label>Username</label> <!--LABEL-->
+			<div class = "underline"></div><!--BOTTOM COLOR-->
+			</div><br>
+			
+			<div class = "input-data"> <!--TO CONTROL THE INPUT-->
+			<input type = "password" required id = "passwords"> 
+			<label>Password</label> <!--LABEL-->
+			<div class = "underline"></div><!--BOTTOM COLOR-->
+			</div>
+			
+			
+			<!--checkbox/showpassword-->
+				<input type = "checkbox" id = "check-box" onclick = "myFunction()"></input><label id = "showpass"> show password</label><br>
+				
+				<!--submit-->
+				<button id = "submit" onclick = "valid()">SUBMIT</button>
+		</div>
+		</br></br></br></br></br></br></br></br>
+ 	</body>
+</html>
